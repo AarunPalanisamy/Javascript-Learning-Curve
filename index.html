@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><title>Javascript Day 2</title></head>
+<body>
+<p id="change"> Javascript Day 2</p>
+<script>
+    // let, var, const, boolen;
+    // undefined, NaN 
+    // operators -> Math, Arthemetic operators, Array, Conditinoal statement, Switch cases , javascript libararies , looping -> for , foreach, while , do while;
+    var outsidescope = "functionku veliya"; // global
+    const valuepi = 3.14;
+    var add;
+    function learn(){
+        var num1, num2 = 3;
+        console.log("values",num1+num2 );
+        const vale= new Boolean(1);
+        console.log("value", vale);
+            if(vale){
+                 console.log("workin boolean");
+                 if (1){
+                     sub();
+                 }
+              }
+        add = valuepi+1;
+        outsidescope= 10;
+        let insidescope = "function inside"; // inclined to an function
+        console.log("1 st",outsidescope);
+        console.log("2 nd",insidescope);
+        console.log('====================================');
+        console.log("value of pi",valuepi);
+        console.log('====================================');
+        console.log("added",add);
+
+    }
+    learn();
+
+    console.log("1->>>>",outsidescope);
+    console.log("2----->>",insidescope);
+
+    document.getElementById("change").innerHTML="Get element by id is working";
+    // var num3, num4 = 10;
+    var num1=5;
+    var num2=6;
+    num2 = 10;
+    var tot= num1+num2;
+    console.log("tot",tot);
+    console.log("Total",num1+num2);
+    // document.write("Document write", num1);
+</script>
+   
+<span> Hello</span>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
