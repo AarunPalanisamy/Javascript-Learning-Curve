@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><title>Javascript Day 2</title></head>
+<head><title>Javascript Day 4</title></head>
 <body>
-<p id="change"> Javascript Day 2</p>
+<p id="change" text-color:blue> Javascript Day 4</p>
+<p id="demo" ></p>
+<span id="demo1"></span>
 <script>
     // let, var, const, boolen;
     // undefined, NaN 
@@ -15,12 +17,7 @@
         console.log("values",num1+num2 );
         const vale= new Boolean(1);
         console.log("value", vale);
-            if(vale){
-                 console.log("workin boolean");
-                 if (1){
-                     sub();
-                 }
-              }
+
         add = valuepi+1;
         outsidescope= 10;
         let insidescope = "function inside"; // inclined to an function
@@ -35,7 +32,7 @@
     learn();
 
     console.log("1->>>>",outsidescope);
-    console.log("2----->>",insidescope);
+    // console.log("2----->>",insidescope);
 
     document.getElementById("change").innerHTML="Get element by id is working";
     // var num3, num4 = 10;
@@ -46,9 +43,398 @@
     console.log("tot",tot);
     console.log("Total",num1+num2);
     // document.write("Document write", num1);
+
+
+    function Arthemetic(){
+        var a =6;
+        var b =5;
+        console.log("add",a+b);
+        console.log("sub",a-b);
+        console.log("add",a*b);
+        console.log("add",a/b);
+        console.log("mod",a%b); // imp 
+
+    }
+    Arthemetic();
+//    function alertprompt(){
+//         // var message="heyyy";
+//         // alert("checking "+ message);
+
+//         let name = prompt("dynamic value", 10)
+//         if(name==10){
+//             alert("correct answer");
+//         }
+//         else{
+//             alert("wrong answer");
+//         }
+
+
+//     }
+//     alertprompt();
+
+    function operators(){ //       && , || , ! 
+        let a =10;
+        let b =7
+        if(a>5 && b==7){
+            console.log("AND working ")
+        }
+
+        if(a>9 || b == 12){
+            console.log("OR working ")
+        }
+        if(a!=9){
+            console.log("not equal");
+        }
+        }
+operators();
+
+function conOperators(){       // check ? statement1 : statement2; // == check , ==== datatype check
+     let a="100";   
+         a==100 ? console.log("yes"):console.log("No");
+
+}
+conOperators();
+// function switchcase(){
+//     var inum =10;
+//     switch
+    
+
+// }
+
+// for , while , do while , for each <in>;
+function lfor(){
+    var inum;
+    let sum =0;
+    const arr =["hello", "hi", 8]; // arr[0]
+    const val =[{firstname: "Arun", lastname:"Palanisamy", Age: 25}]; //arr.firstname
+
+    for(inum=0;inum<10;inum++){              // 1<5 inum = 1 + 1;    for(init; condition check; {execution} ; increament ) inum--
+        
+    
+    inum%2==0 ? console.log("even", inum) : console.log("odd", inum);
+    // jsx -> javascript + html 
+    // if(inum%2==0){
+        //     console.log("table 2--->", inum);
+        // }
+        // else if(inum%3==0){
+        //     console.log("table 3*****",inum);
+        // }
+        // else if(inum%5==0){
+        //     console.log("table 5",inum);
+        // }
+        // sum = sum + inum;
+        // sum+= inum;
+        // console.log("sum of value inside the loop ", sum);
+    }
+
+
+}
+lfor();
+
+
+
+function lforone(){
+    var inum;
+    let num = 1;
+    for(inum=10;inum>0;inum--)
+    {
+        if(inum==5){
+        console.log("lforone",inum);
+        break;
+        }
+        else{
+            console.log("lfornone",inum);
+        }
+    }
+    // while(num%3){
+    //     console.log("div by 3----->", num);
+    //     if(num==10)
+    //     {
+    //         num=-1;
+    //     }
+    // }
+
+}
+lforone();
+
+
+// Array starts with index value of 0.
+
+
+// 1%3 ==> 1
+// 2%3 ==> 2
+// 3%3 ==> 0
+// 4%3 ==> 1
+// 5%3 ==> 2
+// 6%3 ==> 0
+
+
+
+// Array --> to access multiple data and datatytes in an single variable or also called as objects.
+function arrayy(){
+ let arr = [10,12,15];
+ var arr1 =[20,40,50];
+
+//  document.getElementById("demo").innerHTML= arr+"\n"+arr1;
+const data= ["car","buses", 10];
+
+
+const add=[10,15,20,22,21,27];
+// const add1 = new array(10,20,30);
+{
+   let inum = 10;
+   let len = add.length;
+   console.log("Length--->", len);
+   for(var i=0;i<add.length;i++){
+    if(add[i]%2==0){
+        // document.write("even values are:",add[i]+"\n");
+        document.getElementById("demo").innerHTML= add[i]+"\n";
+
+    }
+    else {
+        document.write("odd values are:",add[i]+"\n");
+    }
+    // add[i]%2==0 ? document.write("even values are:",add[i]+"\n") : document.write("odd values are:",add[i]+"\n"); 
+
+   }
+
+
+}
+
+}
+
+arrayy();
+
+
+// Array -> 10 elements = 2, 3, 5 , 10, 15 , 22, 28, 30, 35, 42;
+
+// divisble -> 10 elements -> new value -> count of how many odd and how many evens. 
+
+// UI display -> basic css -> color , font , align content. 
+
+
+ // arr.length => size of the array
+ // Math.round ==> 15.6 -> 16 || 15.4 -> 15 || 15.5-> 16
+
+//  for(var i=0;i<arr.length;i++){
+
+
+//  }
+
+
+
+
+
+
+
+
+
+
+// <p id="demo"></p>
+
+// 
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.getElementById("demo").innerHTML = cars;
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits[fruits.length];
+// 
+
+// Variable => Let , const , Var
+// var , const => es5 
+//Let => es6
+
+// Datatypes in js -> numbers, strings, objects.
+
+// Operators -> conditional ops , if else , switch
+
+
+function todayjs(){
+    const arr = ["hi",2,3,5,"hi","Hello","how","hi",77];
+    let i;
+    let lenArray = arr.length;
+    let count=0;
+    let hie=0;
+
+    for(let i=0;i<lenArray;i++){
+        if(arr[i]>0 ){
+            
+            count = count + 1; //      count++        count+=1
+        }
+        else if(arr[i]=="hi"){
+            hie++;
+
+        }
+    }
+
+
+    document.write("other way around",lenArray-count);
+    document.write("Number count:",count);
+    document.write("Hi count value4:",hie);
+
+
+
+
+}
+todayjs();
+
+
+// array is nothing but an collection of objects 
+function arrayofobjects(){
+   
+    const array=["Arun", "Palanisamy", "PHN17710", "A+ve", "999999999"];
+   
+    const array1 = {
+        name:"Arun",
+        fname:"Palanisamy",
+        idcard:"PHN17710",
+        bloodgroup:"A+ve",
+        phno:"999999999"
+
+    };
+    document.write("array values are :",array[2]);
+   
+    document.write("array of objects value are :",array1.fname);
+    console.log("Arrrr", array1);
+
+}
+arrayofobjects();
+
+//palindrome : madam,amma,appa,malayalam, 
+// split(), join(), reverse()
+function palindrome(){
+  //  console.log("coming inside")
+    const str='malay';
+    document.write("--------",str.split(''));
+
+    const arraysplit = str.split('');
+    const arrayrev = arraysplit.reverse();
+    const arrayjoin = arrayrev.join('');
+
+
+    str==arrayjoin ? document.write("Palindrome") : document.write("Not a palindrome");
+
+
+}
+palindrome();
+
+
+
+// push , pop , shift, unshift
+function arrayfunc(){
+
+    document.write("<br>");
+
+    const str = ["hey","hello", "How are you"];
+
+
+    str.pop(); // str = "hey", "hello"
+    // document.write("After Popping",str);
+    //  str.push("Pushing ele");
+    // document.write("After pushing",str);
+
+    str.shift();
+    // str[0]; !important
+    str.unshift("Unshifting");
+    document.write("shiftin-->",str);
+
+}
+arrayfunc();
+
+// interview bases questions.
+function hosting(){
+// ES5 , ES6;
+    "use strict";
+    nuum = 10;
+
+    var nuum;
+    // 
+    console.log("hosting",nuum);
+
+}
+hosting();
+
+
+
+// Takes a copy of an actual array -- Actual array will never be affected.
+// Slice can have two argument begning and end. (end = end -1) ;
+function slicee(){
+    const arr=['Hey','javascript','is','confusing','so','wat'];
+    const carr=arr.slice(3);
+    console.log("Slice",carr);
+
+    const caar = arr.slice(1,4); // values will be printed
+    console.log("Slice 2", caar);
+
+}
+slicee();
+// filter , reduce, maping, index maping
+// Affects the original array
+function ssplice(){
+    const arr=['Hey','javascript','is','confusing','so','wat'];
+    // arr.splice(2);
+    arr.splice(2,3) // values with be deleted from par1 and par 2 la how many values.
+    console.log(arr);
+}
+ssplice();
+
+function concatt(){
+    const val = ['heyiee','heeee','you'];
+    const val2 = ['second','array'];
+    const val3=['third','array'];
+    const con = val.concat(val2,val3);
+    console.log(con);
+}
+concatt();
+
+// Filters takes a duplicate array and procees it. 
+
+
+// Paramter la value varum athuku random name kuda kuduthukalam.
+function fil(){
+    const passmark =[20,30,40,50];
+    const check = passmark.filter(passm); // function pass as params.
+
+    function passm(passmark){ // 20,30,40,50
+        if(passmark>=40){
+            return passmark;
+        }
+    }
+    console.log("Filters", check);
+}
+fil();
+ function mul(){
+     var a=10;
+     var b =12;
+     return a*b;
+ }
+console.log("Multiply function",mul());
+
+// Hello -> olleh without using javascript operators. 
+// const str ='hello';
+// const str2='';
+
+
+// Closure nu kuda solalam accessing values right from the top so we can name it like that
+
+// function addd(){
+//     var a = 10;
+//     var sum=0;
+//     function anotherv(){
+//         var b =14;
+//         function anothervv(){
+//             var c = 15;
+//             console.log("Value of c is",c);
+//             sum = a+b+c;
+//             return sum;
+//         }
+//     }
+// console.log("value are :", sum);
+// }
+
+// addd();
+
 </script>
    
-<span> Hello</span>
 
 
 </div>
